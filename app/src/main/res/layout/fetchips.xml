@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SuccessfulScan">
+
+  <TextView
+      android:id="@+id/textView"
+      android:layout_width="230dp"
+      android:layout_height="54dp"
+      android:layout_centerHorizontal="true"
+      android:gravity="center"
+      android:text="Enter NZ NHI" />
+
+  <Button
+      android:id="@+id/cancelButton"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/passcode"
+      android:layout_centerInParent="true"
+      android:text="@string/Cancel" />
+
+  <EditText
+      android:id="@+id/edtNHI"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/textView"
+      android:layout_alignParentBottom="false"
+      android:layout_centerHorizontal="true"
+      android:ems="10"
+      android:inputType="text"
+      android:text="ZZZ0016" />
+
+  <Button
+      android:id="@+id/btnFetch"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/edtNHI"
+      android:layout_centerHorizontal="true"
+      android:text="Fetch" />
+
+</RelativeLayout>
+

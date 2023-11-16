@@ -50,7 +50,7 @@ dependencies {
   implementation("com.google.android.material:material:1.9.0")
   implementation ("org.bitbucket.b_c:jose4j:0.7.7")
   implementation("com.google.android.fhir:engine:0.1.0-beta03")
-
+  implementation("com.squareup.okhttp3:okhttp:4.9.1")
 
   implementation("com.google.code.gson:gson:2.9.1")
 

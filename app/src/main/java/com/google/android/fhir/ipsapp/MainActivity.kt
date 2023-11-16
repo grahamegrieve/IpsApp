@@ -41,6 +41,12 @@ class MainActivity : AppCompatActivity() {
             i.component = ComponentName(this@MainActivity, SelectIndividualResources::class.java)
             startActivity(i)
         }
+        val getFromAlexButton = findViewById<Button>(R.id.getFromAlexButton)
+        getFromAlexButton.setOnClickListener {
+            val i = Intent()
+            i.component = ComponentName(this@MainActivity, GetAlexDocActivity::class.java)
+            startActivity(i)
+        }
     }
 
     // when the button is pressed, go to the QR scanner activity

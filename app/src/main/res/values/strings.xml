@@ -13,4 +13,6 @@
   <string name="enter_an_optional_label">Enter an optional label</string>
   <string name="optionally_add_a_passcode_a_label_or_an_expiration_date">Optionally add a passcode, a label or an expiration date</string>
   <string name="select_which_data_to_include_below">Select which data to include below:</string>
+  <string name="Get_IPS">GET IPS from Alex</string>
+  <string name="Cancel">Cancel</string>
 </resources>

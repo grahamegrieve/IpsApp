@@ -17,6 +17,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:layout_below="@+id/scanQRButton"
         android:text="@string/generate_qr" />
+
+    <Button
+        android:id="@+id/getFromAlexButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scanQRButton"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="56dp"
+        android:text="@string/Get_IPS" />
 </RelativeLayout>
