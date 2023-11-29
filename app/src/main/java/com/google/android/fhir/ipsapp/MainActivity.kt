@@ -47,6 +47,24 @@ class MainActivity : AppCompatActivity() {
             i.component = ComponentName(this@MainActivity, GetAlexDocActivity::class.java)
             startActivity(i)
         }
+        val getFromPJButton = findViewById<Button>(R.id.getFromPeter)
+        getFromPJButton.setOnClickListener {
+            val i = Intent()
+            i.component = ComponentName(this@MainActivity, GetPJActivity::class.java)
+            startActivity(i)
+        }
+        val getFromMedicAlert = findViewById<Button>(R.id.getFromMedicAlert)
+        getFromMedicAlert.setOnClickListener {
+            val i = Intent()
+            i.component = ComponentName(this@MainActivity, GetMedicAlertActivity::class.java)
+            startActivity(i)
+        }
+        val getFromTamanu = findViewById<Button>(R.id.getFromTamanu)
+        getFromTamanu.setOnClickListener {
+            val i = Intent()
+            i.component = ComponentName(this@MainActivity, GetFromTamanuActivity::class.java)
+            startActivity(i)
+        }
     }
 
     // when the button is pressed, go to the QR scanner activity

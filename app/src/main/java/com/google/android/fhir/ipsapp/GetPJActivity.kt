@@ -16,7 +16,7 @@ import java.io.IOException
 import org.hl7.fhir.r4.formats.JsonParser
 import org.hl7.fhir.r4.model.Bundle as FhirBundle
 
-class GetAlexDocActivity : AppCompatActivity() {
+class GetPJActivity : AppCompatActivity() {
 
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
@@ -38,16 +38,12 @@ class GetAlexDocActivity : AppCompatActivity() {
 
   private fun fetchIPS(nhi : String) {
 
-    val url = "https://alexapitest.medtechglobal.com/FHIR/Patient/\$summary?identifier=https://standards.digital.health.nz/ns/nhi-id|"+nhi;
-    val token = AlexTokens.TOKEN
-    val facilityId = AlexTokens.FACILITY
+    val url = "https://terminz.azurewebsites.net/fhir/Patient/\$summary?profile=http://hl7.org/fhir/uv/ips/StructureDefinition/Bundle-uv-ips&identifier=https://standards.digital.health.nz/ns/nhi-id|"+nhi+"&_format=json";
 
     try {
       val client = OkHttpClient()
       val request = Request.Builder()
         .url(url)
-        .addHeader("Authorization", "Bearer $token") // Add bearer token to Authorization header
-        .addHeader("mt-facilityid", facilityId)
         .addHeader("Accept", "application/fhir+json")
         .build()
 
@@ -66,7 +62,7 @@ class GetAlexDocActivity : AppCompatActivity() {
                 val bundle = JsonParser().parse(bytes) as FhirBundle;
                 val doc = IPSDocument(bundle);
                 val i = Intent()
-                i.component = ComponentName(this@GetAlexDocActivity, GetData::class.java)
+                i.component = ComponentName(this@GetPJActivity, GetData::class.java)
                 i.putExtra("doc", doc as java.io.Serializable)
                 startActivity(i)
               } catch (e : Exception) {
@@ -85,7 +81,7 @@ class GetAlexDocActivity : AppCompatActivity() {
     }
   }
   private fun showToast(context: Context, message: String) {
-    runOnUiThread { Toast.makeText(this@GetAlexDocActivity, message, Toast.LENGTH_LONG).show() }
+    runOnUiThread { Toast.makeText(this@GetPJActivity, message, Toast.LENGTH_LONG).show() }
   }
   private fun alert(message: String?) {
     showToast(this, "$message")

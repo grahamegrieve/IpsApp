@@ -5,7 +5,7 @@
 5    <uses-sdk android:minSdkVersion="24" />
 6
 7    <uses-permission android:name="android.permission.CAMERA" />
-7-->/usr/local/google/home/hugomilosz/repos/IpsApp/library/src/main/AndroidManifest.xml:4:3-63
-7-->/usr/local/google/home/hugomilosz/repos/IpsApp/library/src/main/AndroidManifest.xml:4:20-60
+7-->/Users/grahamegrieve/work/IpsApp/library/src/main/AndroidManifest.xml:4:3-63
+7-->/Users/grahamegrieve/work/IpsApp/library/src/main/AndroidManifest.xml:4:20-60
 8
 9</manifest>

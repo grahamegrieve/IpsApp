@@ -30,7 +30,7 @@
       android:layout_centerHorizontal="true"
       android:ems="10"
       android:inputType="text"
-      android:text="ZZZ0016" />
+      android:text="ZKT9319" />
 
   <Button
       android:id="@+id/btnFetch"

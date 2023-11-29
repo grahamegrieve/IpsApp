@@ -77,6 +77,24 @@
             </intent-filter>
         </activity>
 
+        <activity android:name="com.google.android.fhir.ipsapp.GetPJActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.google.android.fhir.ipsapp.GetMedicAlertActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.google.android.fhir.ipsapp.GetFromTamanuActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
